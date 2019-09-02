@@ -44,6 +44,11 @@ func InterfaceTest() {
 	callSubscribe(myCareer)
 }
 
+func deferTest() {
+	fmt.Println("The function InterfaceTest ended")
+}
+
 func main() {
+	defer deferTest()
 	InterfaceTest()
 }
